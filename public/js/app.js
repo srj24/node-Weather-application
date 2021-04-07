@@ -1,7 +1,5 @@
 
 
-console.log('client side javascript is loaded')
-
 // To print the result on web
 const messageOne=document.querySelector('#message-1')
 const messageTwo=document.querySelector('#message-2')
