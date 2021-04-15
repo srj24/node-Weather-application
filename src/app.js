@@ -8,6 +8,7 @@ const forecast= require('./utils/forecast')
 const app=express()
 
 // define path for express congi
+const port=process.env.PORT || 3000
 
 const pathtoPubicDirctory=path.join(__dirname,'../public')
 const viewspath=path.join(__dirname,'../template/views')
@@ -68,6 +69,6 @@ app.get('*',(req,res)=>{
         error:'Page not found'
     })
 })
-app.listen(3000,()=>{
-    console.log(' server is live on port 3000')
+app.listen(port,()=>{
+    console.log(' server is live on port '+port)
 })

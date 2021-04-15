@@ -12,7 +12,7 @@ const search=document.querySelector('input')
 weatherform.addEventListener('submit',(e)=>{
     const location=search.value
     e.preventDefault()
-    fetch('http://localhost:3000/weather?address='+location).then((response)=>{
+    fetch('/weather?address='+location).then((response)=>{
     response.json().then((data)=>{
         //console.log(data)
         messageOne.textContent=data.Forecastdata
