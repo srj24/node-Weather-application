@@ -13,8 +13,6 @@ const pathtoPubicDirctory=path.join(__dirname,'../public')
 const viewspath=path.join(__dirname,'../template/views')
 const partialpath=path.join(__dirname,'../template/partials')
 
-
-
 //setup for static directiory to serve
 app.use(express.static(pathtoPubicDirctory))
 hbs.registerPartials(partialpath)
